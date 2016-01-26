@@ -5,9 +5,11 @@ The library makes it easy to use the sensor and all of its features.
 
 This was slightly modified and renamed to DSTH01, which is a more common name for
 These modules as of this writing.
+
 Other modifications include:
+
+  * separated "get~" methods into "start~" and "read~" methods to avoid delays
   * Made setting of CS pin optional
-  * separated "get" methods into "start" and "read" methods to avoid delays
 
 
 Why ?
@@ -29,17 +31,18 @@ If no temperature measurement is done at all, a default value of 25.0C is used.
 
 Who ?
 =====
-Written by Jonas Bo Jalling, <jonas@jalling.dk>
-Modified by iggie
+* Written by Jonas Bo Jalling, <jonas@jalling.dk>
+* Modified by igg2, https://github.com/igg2
 
 
 License ?
 =========
-/*
- * ----------------------------------------------------------------------------
- * "THE BEER-WARE LICENSE" (Revision 42):
- * <jonas@jalling.dk> wrote this file.  As long as you retain this notice you
- * can do whatever you want with this stuff. If we meet some day, and you think
- * this stuff is worth it, you can buy me a beer in return.   Jonas Bo Jalling
- * ----------------------------------------------------------------------------
- */
+
+	/*
+	 * ----------------------------------------------------------------------------
+	 * "THE BEER-WARE LICENSE" (Revision 42):
+	 * <jonas@jalling.dk> wrote this file.  As long as you retain this notice you
+	 * can do whatever you want with this stuff. If we meet some day, and you think
+	 * this stuff is worth it, you can buy me a beer in return.   Jonas Bo Jalling
+	 * ----------------------------------------------------------------------------
+	 */
